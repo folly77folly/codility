@@ -1,10 +1,3 @@
-# def solution (A):
-#     unique_number=set(A)
-#     for numb in unique_number:
-#         count_of_numb=A.count(numb)
-#         if count_of_numb % 2 != 0:
-#             return numb
-
 
 def solution (A):
     result = 0
