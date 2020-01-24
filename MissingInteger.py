@@ -14,8 +14,6 @@ def solution(A):
         return my_diff
     else:
         result = min(my_full_length_set - my_set)
-        print(result)
-        # return result
+        return result
 
-# print(solution([0,1, 3, 6, 4, 1, 2]))
 print(solution([0, 1, 2, 3]))
