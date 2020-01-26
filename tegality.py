@@ -1,3 +1,5 @@
+
+
 from functools import reduce
 
 def solution(A):
@@ -9,3 +11,4 @@ def solution(A):
     return list(result_array)
 
 
+print(solution([1, 2, 3, 4, 5]))
