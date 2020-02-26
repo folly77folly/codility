@@ -54,15 +54,27 @@ def solution(N, A):
     #initialize all counters
     counters = [0] * N
 
+    single_set = set(A)
+    set_list = list(single_set)
 
-    for _, numbers in enumerate(A):
-        if numbers <= N:
-            counter_index = numbers-1
+    if len(single_set) == 1 and set_list[0] == N + 1:
+        return counters
+
+    # if len(set(A)) == 1 and list(set(A))[0] == N + 1:
+    #     return counters
+        
+    # maxcount = 0
+    current_max = 0
+
+    for numbers in A:
+        if 1 <= numbers <= N:
+            counter_index = numbers - 1
             new_counter_sum = counters[counter_index] + 1
             counters[counter_index] = new_counter_sum
+            if current_max < new_counter_sum:
+                current_max = new_counter_sum
         elif numbers == N + 1:
-            max_counter = max(counters)
-            counters =[max_counter] * N
+            counters = [current_max] * N
     return counters
 
 

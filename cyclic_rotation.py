@@ -35,19 +35,16 @@
 # each element of array A is an integer within the range [−1,000..1,000].
 # In your solution, focus on correctness. The performance of your solution will not be the focus of the assessment.
 
-def solution(A,K):
-    if len(A)==0:
+def solution(A, K):
+    if len(A) == 0:
         return []
 
-    while K>0:
-        element=A.pop()
-        A.insert(0,element)
-        K-=1
+    while K > 0:
+        element = A.pop()
+        A.insert(0, element)
+        K -= 1
 
     return A
-
-
-
 
 
 solution([3, 8, 9, 7, 6],3)

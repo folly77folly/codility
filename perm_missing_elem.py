@@ -23,10 +23,10 @@
 # each element of array A is an integer within the range [1..(N + 1)].
 
 def solution(A):
-    sumarray=sum(A)
-    rangevalue=len(A)+2
-    array_len= sum(range (1,rangevalue))
-    missing=array_len-sumarray
+    sum_array = sum(A)
+    range_value = len(A) + 2
+    array_len= sum(range (1, range_value))
+    missing = array_len - sum_array
     return missing
 
 
